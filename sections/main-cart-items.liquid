@@ -249,8 +249,9 @@
           </table>
         {%- endif -%}
       </div>
-      <h1>{{ cart.items_subtotal_price | money}}</h1>
-      <h1>nailed it</h1>
+      {% if cart.items_subtotal_price > 10000 %}
+        <h1>nailed it</h1>
+      {% endif %}
     </div>
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
