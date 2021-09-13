@@ -249,7 +249,7 @@
           </table>
         {%- endif -%}
       </div>
-      {% if cart.total_price > 100 %}
+      {% if cart.total_price >= 100 %}
         <h1>nailed it</h1>
       {% end if %}
     </div>
