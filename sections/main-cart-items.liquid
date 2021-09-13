@@ -247,6 +247,12 @@
               {%- endfor -%}
             </tbody>
           </table>
+          {% if section.settings.enable_gift %}
+            {% if cart.items_subtotal_price > 10000 %}
+              <h1>nailed it2</h1>
+              <img src='https://cdn.shopify.com/s/files/1/0599/2172/7670/files/pexels-skylar-kang-6045704.jpg?v=1631415563'>
+            {% endif %}
+          {% endif %}
         {%- endif -%}
       </div>
     </div>
@@ -265,6 +271,11 @@
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.main-cart-items.settings.show_vendor.label"
+    },
+    {
+      "type":"checkbox",
+      "label":"Enable Gift",
+      "id":"enable_gift",
     }
   ]
 }
