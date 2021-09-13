@@ -246,15 +246,18 @@
                 </tr>
               {%- endfor -%}
             </tbody>
+            {% if cart.items_subtotal_price > 10000 %}
+              <h1>nailed it1</h1>
+            {% endif %}
           </table>
+          {% if cart.items_subtotal_price > 10000 %}
+            <h1>nailed it2</h1>
+          {% endif %}
         {%- endif -%}
         {% if cart.items_subtotal_price > 10000 %}
-          <h1>nailed it</h1>
+          <h1>nailed it3</h1>
         {% endif %}
       </div>
-      {% if cart.items_subtotal_price > 10000 %}
-        <h1>nailed it</h1>
-      {% endif %}
     </div>
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
