@@ -248,6 +248,9 @@
             </tbody>
           </table>
         {%- endif -%}
+        {% if cart.items_subtotal_price > 10000 %}
+          <h1>nailed it</h1>
+        {% endif %}
       </div>
       {% if cart.items_subtotal_price > 10000 %}
         <h1>nailed it</h1>
