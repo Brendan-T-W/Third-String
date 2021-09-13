@@ -249,10 +249,10 @@
           </table>
         {%- endif -%}
       </div>
-      <h1>Hello5</h1>
-      <h1>Hello5.5</h1>
+      {% if cart.total_price > 100 %}
+        <h1>nailed it</h1>
+      {% end if %}
     </div>
-    <h1>Hello6</h1>
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
