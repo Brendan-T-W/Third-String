@@ -323,32 +323,22 @@
               </td>
 
               <td class="cart-item__totals right medium-hide large-up-hide">
-                <p>Free01</p>
                 <div class="loading-overlay hidden">
-                  <p>Free02</p>
                   <div class="loading-overlay__spinner">
-                    <p>Free03</p>
                     <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                       <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      <p>Free04</p>
                     </svg>
                   </div>
                 </div>
-                <p>Free</p>
                 <div class="cart-item__price-wrapper">
-                  <p>Free1</p>
                   {%- if item.original_line_price != item.final_line_price -%}
                     <dl class="cart-item__discounted-prices">
-                      <p>Free2</p>
                       <dt class="visually-hidden">
                         {{ 'products.product.price.regular_price' | t }}
                       </dt>
-                      <p>Free3</p>
                       <dd>
-                        <p>Free4</p>
                         <s class="cart-item__old-price price price--end">
                           {{ item.original_line_price | money }}
-                          <p>Free5</p>
                         </s>
                       </dd>
                       <dt class="visually-hidden">
