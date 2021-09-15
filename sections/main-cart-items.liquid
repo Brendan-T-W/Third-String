@@ -251,7 +251,7 @@
           {% if cart.total_price >= 10000 and section.settings.enable_gift %}
           
           <div class='gift'>
-            <div class='pic_text'></div>
+            <div class='pic_text'>
               <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                 <td class="cart-item__media">
                   <a href="{{ all_products['gift-item'].url }}">
