@@ -248,7 +248,6 @@
             </tbody>
           </table>
           {% if cart.total_price >= 10000 and section.settings.enable_gift %}
-          <h1>{{all_products['gift-item'].title}}</h1>
 
             <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
               <td class="cart-item__media">
@@ -340,6 +339,7 @@
                       <dd>
                         <s class="cart-item__old-price price price--end">
                           {{ item.original_line_price | money }}
+                          <p>Free</p>
                         </s>
                       </dd>
                       <dt class="visually-hidden">
