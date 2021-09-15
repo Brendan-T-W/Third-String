@@ -2278,7 +2278,7 @@ details-disclosure > details {
   font-size: 1.6rem;
   line-height: 1.4;
   font-family: var(--font-body-family);
-  margin-left: 15%;
+  margin-left: 40px;
 }
 /* @media screen and (max-width: 750px) {
   .gift_text{
