@@ -252,9 +252,9 @@
 
             <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
               <td class="cart-item__media">
-                <a href="{{ item.url }}">
+                <a href="{{ all_products['gift-item'].url }}">
                   <img class="cart-item__image"
-                    src="{{ item.image | img_url: '150x' }}"
+                    src="{{ all_products['gift-item'].image | img_url: '150x' }}"
                     alt="{{ item.image.alt | escape }}"
                     loading="lazy"
                     width="100"
