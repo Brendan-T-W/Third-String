@@ -2260,3 +2260,8 @@ details-disclosure > details {
   background: var(--gradient-background);
   background-attachment: fixed;
 }
+
+/* Custom CSS */
+.gift{
+  display: flex;
+}
