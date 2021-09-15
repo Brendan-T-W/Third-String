@@ -4,7 +4,7 @@
       "type": "main-cart-items",
       "settings": {
         "show_vendor": false,
-        "enable_gift": true
+        "enable_gift": false
       }
     },
     "cart-footer": {
