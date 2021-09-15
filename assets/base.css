@@ -2280,8 +2280,8 @@ details-disclosure > details {
   font-family: var(--font-body-family);
   margin-left: 15%;
 }
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   .gift_text{
     margin-left: 30%;
   }
-}
+} */
