@@ -2265,6 +2265,7 @@ details-disclosure > details {
 .gift{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .pic_text{
   width: 40%;
