@@ -331,15 +331,19 @@
                   </div>
                 </div>
                 <div class="cart-item__price-wrapper">
-                  <p>Free</p>
+                  <p>Free1</p>
                   {%- if item.original_line_price != item.final_line_price -%}
                     <dl class="cart-item__discounted-prices">
+                      <p>Free2</p>
                       <dt class="visually-hidden">
                         {{ 'products.product.price.regular_price' | t }}
                       </dt>
+                      <p>Free3</p>
                       <dd>
+                        <p>Free4</p>
                         <s class="cart-item__old-price price price--end">
                           {{ item.original_line_price | money }}
+                          <p>Free5</p>
                         </s>
                       </dd>
                       <dt class="visually-hidden">
