@@ -251,22 +251,20 @@
           {% if cart.total_price >= 10000 and section.settings.enable_gift %}
           
           <div class='gift'>
-            <div class='pic_text'>
-              <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-                <td class="cart-item__media">
-                  <a href="{{ all_products['gift-item'].url }}">
-                    <img class="cart-item__image"
-                      src="https://cdn.shopify.com/s/files/1/0599/2172/7670/files/Gift_Item_Picture_Center.png?v=1631676175"
-                      alt="{{ item.image.alt | escape }}"
-                      loading="lazy"
-                      width="100"
-                      height="{{ 100 | divided_by: item.image.aspect_ratio | ceil }}"
-                    >
-                  </a>
-                </td>
-              </tr>
-              <h4 class='gift_text'>Surprise Gift ($15 dollar value)</h4>
-            </div>
+            <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
+              <td class="cart-item__media">
+                <a href="{{ all_products['gift-item'].url }}">
+                  <img class="cart-item__image"
+                    src="https://cdn.shopify.com/s/files/1/0599/2172/7670/files/Gift_Item_Picture_Center.png?v=1631676175"
+                    alt="{{ item.image.alt | escape }}"
+                    loading="lazy"
+                    width="100"
+                    height="{{ 100 | divided_by: item.image.aspect_ratio | ceil }}"
+                  >
+                </a>
+              </td>
+            </tr>
+            <h4 class='gift_text'>Surprise Gift ($15 dollar value)</h4>
             <div class='price_free'>
               <p class='price price--end'>Free</p>
             </div>
