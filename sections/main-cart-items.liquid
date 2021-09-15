@@ -346,12 +346,12 @@
                       </dt>
                       <dd class="price price--end">
                         {{ item.final_line_price | money }}
+                        <p>Free</p>
                       </dd>
                     </dl>
                   {%- else -%}
                     <span class="price price--end">
                       {{ item.original_line_price | money }}
-                      <p>Free</p>
                     </span>
                   {%- endif -%}
 
