@@ -248,12 +248,13 @@
             </tbody>
           </table>
           {% if cart.total_price >= 10000 and section.settings.enable_gift %}
+          {{all_products['gift-item'].title}}
 
             <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
               <td class="cart-item__media">
                 <a href="{{ item.url }}">
                   <img class="cart-item__image"
-                    src="{{ https://cdn.shopify.com/s/files/1/0599/2172/7670/files/pexels-skylar-kang-6045704.jpg?v=1631415563: '150x' }}"
+                    src="{{ item.image | img_url: '150x' }}"
                     alt="{{ item.image.alt | escape }}"
                     loading="lazy"
                     width="100"
