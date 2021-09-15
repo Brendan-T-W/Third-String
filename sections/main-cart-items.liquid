@@ -242,17 +242,14 @@
                         </div>
                       {%- endif -%}
                     </div>
-                    <h1>hey1</h1>
                   </td>
-                  <h1>hey2</h1>
                 </tr>
-                <h1>hey3</h1>
               {%- endfor -%}
             </tbody>
-            <h1>hey4</h1>
           </table>
-          <h1>hey5</h1>
-          <h1>hey5</h1>
+          {% if enable_gift and cart.items_subtotal_price > 10000 %}
+            <h1>hey5</h1>
+          {% endif %}
         {%- endif -%}
       </div>
     </div>
